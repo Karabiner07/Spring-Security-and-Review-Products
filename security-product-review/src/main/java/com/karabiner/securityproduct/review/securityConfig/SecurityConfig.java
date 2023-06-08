@@ -66,6 +66,7 @@ public class SecurityConfig{
 
                 .antMatchers("/post*").hasAuthority("USER")
                 .antMatchers("/review/**").hasAuthority("USER")
+                .antMatchers("/review/count/productId/").hasAuthority("USER")
 
                 .anyRequest().authenticated()
                 .and()
