@@ -56,8 +56,6 @@ public class SecurityConfig{
                 .and()
 
 
-
-
                 .authorizeHttpRequests()
                 .antMatchers(WHITE_LIST_URLS).permitAll()
 
